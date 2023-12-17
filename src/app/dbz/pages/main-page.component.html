@@ -1,0 +1,17 @@
+<h1>Dragon ball z Main Page</h1>
+<hr>
+<div class="row">
+
+  <div class="col">
+    <dbz-lista [characterList]="personajes"
+    (onDeleteId)="onDeleteId($event)"
+    ></dbz-lista>
+  </div>
+
+  <div class="col">
+    <dbz-form
+    (onNewCharacter)="onNewPersonaje($event)"
+    ></dbz-form>
+
+  </div>
+</div>
